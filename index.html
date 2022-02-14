@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Roboto & display семья = Робото: вес @ 400; 700 & swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- Custom CSS and JS-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Pizza shop</title>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header__wrapper">
+                        <div class="header__inner">
+                            <div class="header__logo">
+                                <img src="assets/images/logo.svg" alt="logo" title="logo">
+                            </div>
+                            <div class="header__text">
+                                <div class="header__text-title">PIZZA SHOP</div>
+                                <div class="header__text-desk">самая вкусная пицца во вселенной</div>
+                            </div>
+                        </div>
+                        <div class="header__cart">
+                            <div class="header__cart-total-price">520 ₽</div>
+                            <div class="header__cart-quantitys-items">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="catalog__navigation">
+                        <div class="catalog__navigation-category">
+                            <ul class="catalog__navigation-category-list">
+                                <div class="catalog__navigation-category-list-item active" data-id-category="1">Все</div>
+                                <div class="catalog__navigation-category-list-item" data-id-category="2">Мясные</div>
+                                <div class="catalog__navigation-category-list-item" data-id-category="3">Вегетарианская</div>
+                                <div class="catalog__navigation-category-list-item" data-id-category="4">Гриль</div>
+                                <div class="catalog__navigation-category-list-item" data-id-category="5">Острые</div>
+                                <div class="catalog__navigation-category-list-item" data-id-category="6">Закрытые</div>
+                            </ul>
+                        </div>
+                        <div class="catalog__navigation-category-mobile">
+                            <div class="catalog__navigation-category-select">
+                                <div class="catalog__navigation-category-select-title">Все пиццы</div>
+                                <div class="catalog__navigation-category-select-list">
+                                    <div class="catalog__navigation-category-select-list-item active" data-id-category="1">Все пиццы</div>
+                                    <div class="catalog__navigation-category-select-list-item" data-id-category="2">Мясные</div>
+                                    <div class="catalog__navigation-category-select-list-item" data-id-category="3">Вегетарианская</div>
+                                    <div class="catalog__navigation-category-select-list-item" data-id-category="4">Гриль</div>
+                                    <div class="catalog__navigation-category-select-list-item" data-id-category="5">Острые</div>
+                                    <div class="catalog__navigation-category-select-list-item" data-id-category="6">Закрытые</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__navigation-sort">
+                            <div class="catalog__navigation-sort-text">Сортировка по:</div>
+                            <div class="catalog__navigation-sort-type">популярности</div>
+                            <div class="catalog__navigation-sort-list hidden">
+                                <ul class="catalog__navigation-sort-list">
+                                    <div class="catalog__navigation-sort-list-item">популярности</div>
+                                    <div class="catalog__navigation-sort-list-item">по цене</div>
+                                    <div class="catalog__navigation-sort-list-item">по алфавиту</div>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="catalog__section-wrapper">
+                        <!--Вывод категорий из json файла-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JS -->
+    <!-- Products -->
+    <script src="components/catalog/category/products/toggleOptions.js"></script>
+    <!-- Catalog -->
+    <script src="components/catalog/category/renderCatalog.js"></script>
+    <script src="components/catalog/category/toggleCategories.js"></script>
+    <!-- Init App-->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
